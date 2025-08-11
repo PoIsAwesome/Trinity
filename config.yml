@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main  # change if your default branch is different
+
+media_folder: "images/uploads"  # Folder where uploaded images will go
+public_folder: "/images/uploads"
+
+collections:
+  - name: "about"
+    label: "About Page"
+    files:
+      - file: "content/about.json"
+        label: "About Content"
+        name: "about_content"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Profile Image", name: "image", widget: "image"}
+          - {label: "HTML Content", name: "html", widget: "markdown"}
+
+  - name: "schedule"
+    label: "Schedule"
+    files:
+      - file: "content/schedule.json"
+        label: "Schedule Entries"
+        name: "schedule_entries"
+        fields:
+          - {label: "Entries", name: "entries", widget: "list", 
+             fields: 
+               - {label: "Title", name: "title", widget: "string"}
+               - {label: "Time", name: "time", widget: "string"}
+               - {label: "Note", name: "note", widget: "text"}}
+
+  - name: "payment"
+    label: "Payment Links"
+    files:
+      - file: "payment.html"
+        label: "Payment Page"
+        name: "payment_page"
+        fields:
+          - {label: "Ko-fi Link", name: "kofi_link", widget: "string"}
+          - {label: "PayPal Link", name: "paypal_link", widget: "string"}
