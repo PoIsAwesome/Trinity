@@ -2,37 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Streamer — About</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: #c4b5ff; /* light purple background matching your theme */
+      margin: 0;
+      padding: 0;
+    }
+    .nc-logo {
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="index.html">Streamer</a>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="payment.html">Support</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <img id="profileImage" alt="Streamer portrait" class="avatar" src="images/profile-placeholder.jpg">
-      <div class="hero-text">
-        <h1 id="displayName">Streamer Name</h1>
-        <p id="shortBio">Short tagline...</p>
-        <a class="btn" href="payment.html">Tip / Donate</a>
-      </div>
-    </section>
-
-    <section class="about" id="aboutText"></section>
-  </main>
-
-  <footer class="site-footer">
-    <small>© <span id="year"></span> Streamer — Built with ❤️</small>
-  </footer>
-
-  <script src="js/load-content.js"></script>
+  <!-- The Netlify CMS will mount here -->
 </body>
 </html>
