@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support the Streamer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Streamer</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="payment.html">Support</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Support / Tip</h2>
+    <div class="payment-options">
+      <div class="card">
+        <h3>Ko-fi</h3>
+        <a class="btn" href="https://ko-fi.com/YOURNAME" target="_blank">Support on Ko-fi</a>
+      </div>
+      <div class="card">
+        <h3>PayPal</h3>
+        <a class="btn" href="https://paypal.me/YOURNAME" target="_blank">Send via PayPal</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year3"></span> Streamer</small>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
